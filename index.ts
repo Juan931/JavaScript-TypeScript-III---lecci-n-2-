@@ -5,7 +5,8 @@ import './style.css';
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
-//Contiene por lo menos el comportamiento de presentarse a sí mismo(introduce())Protagonista principal que hereda de Character No olvides agregar algunos comportamientos propios de este personaje. (métodos)
+//Contiene por lo menos el comportamiento de presentarse a sí mismo(introduce())Protagonista principal 
+//que hereda de Character No olvides agregar algunos comportamientos propios de este personaje. (métodos)
 
 abstract class Character {
   nameAntagonist: string ="Jhon Martin"
@@ -30,7 +31,8 @@ const protagonist= new ProtagonistaP();
 console.log(protagonist.introduced())
 console.log(protagonist.protagonist())
 
-//Antagonista principal que hereda de Character. No olvides agregar algunos comportamientos propios de este personaje. (métodos)
+//Antagonista principal que hereda de Character. No olvides agregar algunos 
+//comportamientos propios de este personaje. (métodos)
 
 class antagonistaP extends Character{
   antagonist(){
@@ -40,3 +42,6 @@ class antagonistaP extends Character{
 const antagonist= new antagonistaP();
 console.log(antagonist.introduced1())
 console.log(antagonist.antagonist());
+
+
+
