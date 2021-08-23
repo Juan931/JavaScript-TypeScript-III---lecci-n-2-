@@ -8,8 +8,8 @@ appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 //Contiene por lo menos el comportamiento de presentarse a sí mismo(introduce())Protagonista principal 
 //que hereda de Character No olvides agregar algunos comportamientos propios de este personaje. (métodos)
 
-abstract class Character {
-  nameAntagonist: string ="Jhon Martin"
+abstract class Character <generic> {
+  nameAntagonist: generic | string = "Jhon Martin";
   nameProtagonist: string ="Juan Casas ";
   introduced(){
   return "My name is " + this.nameProtagonist; 
@@ -20,8 +20,10 @@ abstract class Character {
  
 }
 
+
+
 //implementar metodo en protagonista principal
-class ProtagonistaP extends Character{
+class ProtagonistaP extends Character <string>{
     protagonist(){
         return "Y yo soy el protagonista,y soy el heroe "
       }
@@ -34,7 +36,7 @@ console.log(protagonist.protagonist())
 //Antagonista principal que hereda de Character. No olvides agregar algunos 
 //comportamientos propios de este personaje. (métodos)
 
-class antagonistaP extends Character{
+class antagonistaP extends Character<string>{
   antagonist(){
     return "Yo soy el antagonista, y soy el malo."
   }
