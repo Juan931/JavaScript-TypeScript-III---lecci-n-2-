@@ -8,8 +8,8 @@ appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 //Contiene por lo menos el comportamiento de presentarse a sí mismo(introduce())Protagonista principal 
 //que hereda de Character No olvides agregar algunos comportamientos propios de este personaje. (métodos)
 
-abstract class Character <generic> {
-  nameAntagonist: generic = "Jhon Martin";
+abstract class Character <t> {
+  nameAntagonist: t | string = "Jhon Martin";
   nameProtagonist: string ="Juan Casas ";
   introduced(){
   return "My name is " + this.nameProtagonist; 
