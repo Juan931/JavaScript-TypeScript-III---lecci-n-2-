@@ -9,7 +9,7 @@ appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 //que hereda de Character No olvides agregar algunos comportamientos propios de este personaje. (métodos)
 
 abstract class Character <generic> {
-  nameAntagonist: generic | string = "Jhon Martin";
+  nameAntagonist: generic = "Jhon Martin";
   nameProtagonist: string ="Juan Casas ";
   introduced(){
   return "My name is " + this.nameProtagonist; 
